@@ -142,6 +142,8 @@ int main(){
     printf("=================ETAPA 2=================\n");
     printf("\n");
 
+
+
     long long inverso = sucessiva(g, n);
 
     printf("==================ETAPA 3=================\n\n");
@@ -149,6 +151,7 @@ int main(){
     long long a = (h * inverso) % n;
 
     printf("Temos que a = %lld\n", a);
+    printf("Foi encontrado a pela multiplicação modular\n");
 
 
     printf("=================ETAPA 4=================\n\n");
@@ -233,6 +236,7 @@ int main(){
 
     printf("==================ETAPA 9=================\n\n");
 
+    printf("Vamos entao decompor com propriedades a^x mod n1");
     printf("%lld^%lld mod %lld\n", a, x, n1);
     printf("%lld^(%lld * %lld + %lld) mod %lld\n", a, x1, q, r, n1);
     printf("((%lld^%lld)^%lld * %lld^%lld) mod %lld\n", a, x1, q, a, r, n1);
@@ -261,6 +265,7 @@ int main(){
     printf("\n");
 
     printf("==================ETAPA 11=================\n\n");
+    printf("Por fim temos que no passo 11: \n");
     printf("x2^q * a^r mod n1\n");
     long long resultado = (x2q * ar) % n1;
     printf("%lld * %lld mod %lld = %lld\n", x2q, ar, n1, resultado);
